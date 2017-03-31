@@ -11,18 +11,24 @@
     <!-- endbuild -->
 </head>
 <body>
-<div class="large-hero">
-    <picture>
-        <source srcset="assets/images/KV-BG--large.jpg 1920w, assets/images/KV-BG--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
-        <source srcset="assets/images/KV-BG--medium.jpg 1380w, assets/images/KV-BG--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
-        <source srcset="assets/images/KV-BG--small.jpg 990w, assets/images/KV-BG--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
-        <img srcset="assets/images/KV-BG--smaller.jpg 640w, assets/images/KV-BG--smaller-hi-dpi.jpg 1280w" alt="" class="large-hero__image">
-    </picture>
-    <div class="large-hero__main-KV">
-        <!-- <img srcset="assets/images/mainKV.png 1920w"
-             alt="" class="large-hero__image"> -->
+<!--Video Section-->
+<section class="content-section video-section">
+    <div class="video-section__pattern-overlay">
+        <a id="bgndVideo" class="video-section__player" data-property="{videoURL:'https://youtu.be/S_wMZaz210w',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}"></a>
+        <div class="wrapper">
+            <div class="row">
+                <div class="row__medium-12">
+                    <img class="video-section__img" src="assets/images/GjunDesignInstitueLogo.svg" alt="">
+                    <h1>
+                        <span id="ut_word_rotator_1" class="ut_word_rotator"></span>
+                    </h1>
+                    <p class="video-section__btn">馬上索取</p>
+
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section> <!--Video Section Ends Here-->
 
 <section class="form page-section--small page-section--gray">
     <div class="wrapper">
@@ -252,6 +258,7 @@
 
 <script type="text/javascript" src="/wGuest/js/m_pcschool_Responsive.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
 <script>
 
     var isMobile = false;
@@ -375,5 +382,13 @@
 <!-- build:js assets/scripts/App.js -->
 <script src="/temp/scripts/App.js"></script>
 <!-- endbuild -->
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(".video-section__player").mb_YTPlayer();
+
+    });
+</script>
+
 </body>
 </html>

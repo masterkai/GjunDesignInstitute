@@ -50,13 +50,31 @@
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	var _Form = __webpack_require__(2);
-
-	var _Form2 = _interopRequireDefault(_Form);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var form = new _Form2.default();
+	// scrollto form
+
+	(0, _jquery2.default)(".video-section__btn").click(function () {
+		(0, _jquery2.default)('html,body').animate({
+			scrollTop: (0, _jquery2.default)(".form").offset().top
+		}, 'slow');
+	});
+
+	// rotator word
+
+	var ut_word_rotator = function ut_word_rotator() {
+
+		var ut_rotator_words = ['專業技能', '創意思考', '實務接軌'],
+		    counter = 0;
+
+		setInterval(function () {
+			(0, _jquery2.default)("#ut_word_rotator_1").fadeOut(function () {
+				(0, _jquery2.default)(this).html(ut_rotator_words[counter = (counter + 1) % ut_rotator_words.length]).fadeIn();
+			});
+		}, 3000);
+	};
+
+	ut_word_rotator();
 
 /***/ },
 /* 1 */
@@ -10316,30 +10334,6 @@
 	return jQuery;
 	} );
 
-
-/***/ },
-/* 2 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _jquery = __webpack_require__(1);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var Form = function Form() {
-	    _classCallCheck(this, Form);
-	};
-
-	exports.default = Form;
 
 /***/ }
 /******/ ]);

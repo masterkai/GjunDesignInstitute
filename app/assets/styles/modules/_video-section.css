@@ -1,0 +1,78 @@
+.video-section {
+	&__pattern-overlay {
+		background-color: rgba(50, 50, 50, 0.59);
+		background-image: url(../../assets/images/overlay6x6.png);
+		padding: 110px 0 32px;
+		min-height: 496px;
+		@mixin atSmall {
+			min-height: 940px;
+		}
+	}
+	h1 {
+		text-align: center;
+		padding-left: 1rem;
+		color: #fff;
+		font-size: 3rem;
+		font-weight: 300;
+		letter-spacing: 1rem;
+		text-transform: uppercase;
+		margin: 100px auto 0px;
+		text-shadow: 1px 1px 1px #000;
+		@mixin atSmall {
+			font-size: 5rem;
+			margin: 140px auto 0px;
+			letter-spacing: 3rem;
+			padding-left: 3rem;
+		}
+	}
+	h3 {
+		text-align: center;
+		color: #fff;
+		font-size: 1.5vw;
+		font-weight: lighter;
+		margin: 0px auto 15px;
+	}
+	&__player {
+		font-size: 1px;
+	}
+	text-align: center;
+	&__img {
+		max-width: 18rem;
+		@mixin atSmall {
+			max-width: 40rem;
+		}
+	}
+	&__btn {
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		padding: 12px 30px;
+		margin: 50px auto 0px;
+		font-size: 2.5em;
+		font-kerning: normal;
+		color: rgba(255, 255, 255, 1);
+		background-color: rgba(255, 255, 255, 0);
+		cursor: pointer;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		-webkit-transition: 0.2s background linear;
+		-moz-transition: 0.2s background linear;
+		transition: 0.35s all linear;
+		text-decoration: none !important;
+		@mixin atSmall {
+			margin: 160px auto 0px;
+		}
+		&:hover {
+			border: 1px solid rgba(255, 255, 255, 1);
+			color: rgba(255, 255, 255, 1);
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+	}
+}
+
+.buttonBar {
+	display: none;
+}
+
+.ut_word_rotator {
+	color: inherit;
+}

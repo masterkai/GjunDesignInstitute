@@ -55,26 +55,39 @@
 	// scrollto form
 
 	(0, _jquery2.default)(".video-section__btn").click(function () {
-		(0, _jquery2.default)('html,body').animate({
-			scrollTop: (0, _jquery2.default)(".form").offset().top
-		}, 'slow');
+	    (0, _jquery2.default)('html,body').animate({
+	        scrollTop: (0, _jquery2.default)(".form").offset().top
+	    }, 'slow');
 	});
 
 	// rotator word
 
 	var ut_word_rotator = function ut_word_rotator() {
 
-		var ut_rotator_words = ['專業技能', '創意思考', '實務接軌'],
-		    counter = 0;
+	    var ut_rotator_words = ['專業技能', '創意思考', '實務接軌'],
+	        counter = 0;
 
-		setInterval(function () {
-			(0, _jquery2.default)("#ut_word_rotator_1").fadeOut(function () {
-				(0, _jquery2.default)(this).html(ut_rotator_words[counter = (counter + 1) % ut_rotator_words.length]).fadeIn();
-			});
-		}, 3000);
+	    setInterval(function () {
+	        (0, _jquery2.default)("#ut_word_rotator_1").fadeOut(function () {
+	            (0, _jquery2.default)(this).html(ut_rotator_words[counter = (counter + 1) % ut_rotator_words.length]).fadeIn();
+	        });
+	    }, 3000);
 	};
 
 	ut_word_rotator();
+
+	// window height resize
+
+	resizeDiv();
+	window.onresize = function (event) {
+	    resizeDiv();
+	};
+
+	function resizeDiv() {
+	    var viewportHeight = (0, _jquery2.default)(window).height();
+	    (0, _jquery2.default)('.video-section').css('height', viewportHeight);
+	    (0, _jquery2.default)('.video-section__pattern-overlay').css('height', viewportHeight);
+	}
 
 /***/ },
 /* 1 */

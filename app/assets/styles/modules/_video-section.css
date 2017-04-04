@@ -3,9 +3,9 @@
 		background-color: rgba(50, 50, 50, 0.59);
 		background-image: url(../../assets/images/overlay6x6.png);
 		padding: 110px 0 32px;
-		min-height: 496px;
+		/*min-height: 496px;*/
 		@mixin atSmall {
-			min-height: 940px;
+			/*min-height: 940px;*/
 		}
 	}
 	h1 {

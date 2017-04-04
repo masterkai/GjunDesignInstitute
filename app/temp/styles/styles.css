@@ -1347,13 +1347,13 @@ background-position: 100% 90.76433121019109%;
   background-color: rgba(50, 50, 50, 0.59);
   background-image: url(../../assets/images/overlay6x6.png);
   padding: 110px 0 32px;
-  min-height: 496px;
 }
+
+/*min-height: 496px;*/
 
 @media (min-width: 530px) {
 
-  .video-section__pattern-overlay {
-    min-height: 940px;
+  .video-section__pattern-overlay {/*min-height: 940px;*/
   }
 }
 

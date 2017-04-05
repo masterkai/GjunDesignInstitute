@@ -37,4 +37,5 @@ function resizeDiv() {
     var viewportHeight = $(window).height();
     $('.video-section').css('height', viewportHeight);
     $('.video-section__pattern-overlay').css('height', viewportHeight);
+    $('.video-section__flex-container').css('height', viewportHeight);
 }

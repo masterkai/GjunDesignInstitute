@@ -2,13 +2,25 @@
 	&__pattern-overlay {
 		background-color: rgba(50, 50, 50, 0.59);
 		background-image: url(../../assets/images/KV-BG--small.jpg);
-		padding: 110px 0 32px;
-		/*min-height: 496px;*/
 		@mixin atSmall {
 			background-image: url(../../assets/images/overlay6x6.png);
 		}
 	}
+	&__flex-container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		align-content: stretch;
+	}
+	&__flex-item {
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: auto;
+	}
 	h1 {
+		margin: 0;
 		text-align: center;
 		padding-left: 1rem;
 		color: #fff;
@@ -16,11 +28,9 @@
 		font-weight: 300;
 		letter-spacing: 1rem;
 		text-transform: uppercase;
-		margin: 100px auto 0px;
 		text-shadow: 1px 1px 1px #000;
 		@mixin atSmall {
 			font-size: 5rem;
-			margin: 140px auto 0px;
 			letter-spacing: 3rem;
 			padding-left: 3rem;
 		}
@@ -43,9 +53,9 @@
 		}
 	}
 	&__btn {
+		margin: 0;
 		border: 1px solid rgba(255, 255, 255, 0.15);
 		padding: 12px 30px;
-		margin: 50px auto 0px;
 		font-size: 2.5em;
 		font-kerning: normal;
 		color: rgba(255, 255, 255, 1);
@@ -58,9 +68,7 @@
 		-moz-transition: 0.2s background linear;
 		transition: 0.35s all linear;
 		text-decoration: none !important;
-		@mixin atSmall {
-			margin: 160px auto 0px;
-		}
+		@mixin atSmall {}
 		&:hover {
 			border: 1px solid rgba(255, 255, 255, 1);
 			color: rgba(255, 255, 255, 1);

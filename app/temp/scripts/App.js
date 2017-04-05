@@ -87,6 +87,7 @@
 	    var viewportHeight = (0, _jquery2.default)(window).height();
 	    (0, _jquery2.default)('.video-section').css('height', viewportHeight);
 	    (0, _jquery2.default)('.video-section__pattern-overlay').css('height', viewportHeight);
+	    (0, _jquery2.default)('.video-section__flex-container').css('height', viewportHeight);
 	}
 
 /***/ },

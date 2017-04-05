@@ -1,11 +1,11 @@
 .video-section {
 	&__pattern-overlay {
 		background-color: rgba(50, 50, 50, 0.59);
-		background-image: url(../../assets/images/overlay6x6.png);
+		background-image: url(../../assets/images/KV-BG--small.jpg);
 		padding: 110px 0 32px;
 		/*min-height: 496px;*/
 		@mixin atSmall {
-			/*min-height: 940px;*/
+			background-image: url(../../assets/images/overlay6x6.png);
 		}
 	}
 	h1 {

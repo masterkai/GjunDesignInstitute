@@ -741,6 +741,20 @@ textarea.form-control {
   max-width: 50rem;
 }
 
+.headline--smaller {
+  font-weight: 500;
+  font-size: 1.35rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 530px) {
+
+  .headline--smaller {
+    font-size: 2.35rem;
+    line-height: 4rem;
+  }
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -1345,7 +1359,7 @@ background-position: 100% 90.76433121019109%;
 
 .video-section__pattern-overlay {
   background-color: rgba(50, 50, 50, 0.59);
-  background-image: url(../../assets/images/overlay6x6.png);
+  background-image: url(../../assets/images/KV-BG--small.jpg);
   padding: 110px 0 32px;
 }
 
@@ -1353,7 +1367,8 @@ background-position: 100% 90.76433121019109%;
 
 @media (min-width: 530px) {
 
-  .video-section__pattern-overlay {/*min-height: 940px;*/
+  .video-section__pattern-overlay {
+    background-image: url(../../assets/images/overlay6x6.png);
   }
 }
 

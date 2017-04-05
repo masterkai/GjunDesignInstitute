@@ -25,4 +25,14 @@
     &--small-break {
         max-width: 50rem;
     }
+
+     &--smaller {
+          font-weight: 500;
+          font-size: 1.35rem;
+      line-height: 2rem;
+    @mixin atSmall {
+        font-size: 2.35rem;
+        line-height: 4rem;
+    }
+      }
 }

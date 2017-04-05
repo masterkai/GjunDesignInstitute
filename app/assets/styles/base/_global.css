@@ -1,7 +1,9 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
 body {
     background-color: $mainWhite;
     color: #050500;
-    font-family: 'Microsoft YaHei', 'LiHei Pro', 'Noto Sans TC', sans-serif;
+    font-family: 'cwTeXHei', 'Microsoft YaHei', 'LiHei Pro', 'Noto Sans TC', sans-serif ;
 }
 
 img {

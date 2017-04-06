@@ -1,6 +1,6 @@
 .video-section {
 	&__pattern-overlay {
-		background-color: rgba(50, 50, 50, 0.59);
+		background-color: rgba(70, 70, 70, 0.39);
 		background-image: url(../../assets/images/KV-BG--small.jpg);
 		@mixin atSmall {
 			background-image: url(../../assets/images/overlay6x6.png);
@@ -56,7 +56,7 @@
 		margin: 0;
 		border: 1px solid rgba(255, 255, 255, 0.15);
 		padding: 12px 30px;
-		font-size: 2.5em;
+		font-size: 2rem;
 		font-kerning: normal;
 		color: rgba(255, 255, 255, 1);
 		background-color: rgba(255, 255, 255, 0);
@@ -68,7 +68,9 @@
 		-moz-transition: 0.2s background linear;
 		transition: 0.35s all linear;
 		text-decoration: none !important;
-		@mixin atSmall {}
+		@mixin atSmall {
+			font-size: 2.5rem;
+		}
 		&:hover {
 			border: 1px solid rgba(255, 255, 255, 1);
 			color: rgba(255, 255, 255, 1);
